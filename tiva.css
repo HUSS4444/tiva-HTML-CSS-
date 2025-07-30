@@ -1,0 +1,105 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/7576329/pexels-photo-7576329.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ border-radius: 0 0 5px 5px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #00a2ff;
+  font-size: 14px;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #00d9ff;
+    box-shadow: 0 0 5px rgba(0, 47, 255, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+.icons i {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.icons i:hover {
+  color: #007BFF;
+  transition: all 0.3s ease;
+}
+
+/* Main Section بدون صورة */
+.main-section {
+  max-width: 900px;
+  margin: 300px auto;
+  padding: 30px 40px;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.text-section h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.text-section p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons input {
+  padding: 12px 25px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons input:hover {
+  background-color: #2980b9;
+}
