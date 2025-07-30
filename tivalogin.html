@@ -1,0 +1,225 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/7576329/pexels-photo-7576329.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 5px 5px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #00a2ff;
+  font-size: 14px;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #00d9ff;
+  box-shadow: 0 0 5px rgba(0, 47, 255, 0.5);
+  transition: border-color 0.3s ease;
+}
+
+.icons i {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.icons i:hover {
+  color: #007BFF;
+  transition: all 0.3s ease;
+}
+
+/* Main Section */
+.main-section {
+  max-width: 900px;
+  margin: 300px auto;
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.text-section h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.text-section p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons input {
+  padding: 12px 25px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons input:hover {
+  background-color: #2980b9;
+}
+
+/* Centering login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  margin-top: 30px;
+}
+
+/* Login Form */
+.wrapper {
+  width: 380px;
+  background: #ffffff98;
+  border-radius: 10px;
+}
+
+.wrapper .tittle {
+  line-height: 90px;
+  background: #ff0000;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.wrapper form {
+  padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.wrapper form .row input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 10px;
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 16px;
+}
+
+.wrapper form .row input:focus {
+  border-color: #787878;
+  box-shadow: inset 0 0 5px #6EC4FF;
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper form .row i {
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #000000;
+  border-radius: 10px 0 0 10px;
+  font-size: 18px;
+  background: #333;
+  border: 1px solid #787878;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form .button input {
+  padding-left: 0;
+  background: #333;
+  border: 1px solid #787878;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.wrapper form .button input:hover {
+  background: #b4b4b4;
+  border: 1px solid #b4b4b4;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper .pass {
+
+  padding-left: 100px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.wrapper .pass a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.wrapper .pass a:hover {
+  color: #c44558;
+  transition: 0.3s ease-in-out;
+}
+
+.signup {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 0;
+  background: #3333337b;
+}
+
+.signup a {
+  color: #6EC4FF;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  color: #c44558;
+  transition: 0.3s ease-in-out;
+}
